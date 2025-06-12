@@ -76,9 +76,8 @@ php artisan optimize:clear
 ## ✅ Fitur Utama
 
 - 📅 **Booking online dengan kode unik**
-- 📧 **Notifikasi email otomatis**
 - 🛠 **Panel admin & resepsionis via Filament**
-- 📊 **Statistik & laporan reservasi**
+- 📊 **Dashboard Admin dan Resepsionis**
 - 🔐 **Hak akses berbasis role (RBAC)**
 - 📂 **CRUD data kamar, pelanggan, dan transaksi**
 
