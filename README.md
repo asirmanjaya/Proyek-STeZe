@@ -1,36 +1,30 @@
-# Proyek STeZe
+# 🏨 Steze Kost & Guest House Booking System
 
-Sistem Informasi Stok dan Penjualan (STeZe) adalah aplikasi berbasis web yang dirancang untuk membantu pengelolaan stok barang dan pencatatan penjualan di sebuah usaha kecil hingga menengah.
+Sistem manajemen reservasi untuk kost dan guest house berbasis Laravel, terdiri dari:
 
----
-
-## 🔗 Akses Repositori Kode
-Proyek ini tersedia di GitHub:
-
-➡️ [https://github.com/asirmanjaya/Proyek-STeZe](https://github.com/asirmanjaya/Proyek-STeZe)
-
-Repositori ini mencakup:
-- Source code aplikasi
-- Script database (`database.sql`)
-- Panduan instalasi dan deployment (README ini)
+- **Frontend (Pelanggan)** – Laravel + Blade
+- **Backend (Admin & Resepsionis)** – Laravel + Filament
 
 ---
 
-## 🌐 URL Sistem yang Sudah Live
-Aplikasi telah dideploy dan bisa diakses di:
+## 📦 Akses Repositori Kode
 
-➡️ **https://https://steze.biz.id/**  
+🔗 GitHub Repository:  
+[https://github.com/asirmanjaya/Proyek-STeZe](https://github.com/asirmanjaya/Proyek-STeZe)
 
+📂 Struktur Folder:
 
-### 🔐 Demo Login
-Berikut kredensial untuk login ke sistem:
-- **Username:** `admin@gmail.com`
-- **Password:** `12345`
-
----
-
-## ⚙️ Panduan Instalasi (Localhost/XAMPP)
-
-1. **Clone repositori**
-   ```bash
-   git clone https://github.com/asirmanjaya/Proyek-STeZe.git
+```bash
+app/
+├── Filament/                # Panel admin & resepsionis (Filament)
+├── Http/
+│   ├── Controllers/
+│   │   ├── Frontend/       # Kontrol untuk pelanggan
+│   │   └── Admin/          # Kostumisasi panel
+├── Models/                 # Model data
+resources/
+└── views/
+    ├── frontend/           # Tampilan Blade pelanggan
+routes/
+├── web.php                 # Routing pelanggan & publik
+├── filament.php            # Routing panel admin/resepsionis
