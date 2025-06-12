@@ -19,8 +19,8 @@ Repositori ini mencakup:
 ## 🌐 URL Sistem yang Sudah Live
 Aplikasi telah dideploy dan bisa diakses di:
 
-➡️ **http://[alamat-server-kamu]/Proyek-STeZe/**  
-*Contoh: http://192.168.1.10/Proyek-STeZe/*
+➡️ **https://https://steze.biz.id/**  
+
 
 ### 🔐 Demo Login
 Berikut kredensial untuk login ke sistem:
