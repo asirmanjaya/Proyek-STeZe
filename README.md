@@ -12,19 +12,95 @@ Sistem manajemen reservasi untuk kost dan guest house berbasis Laravel, terdiri 
 🔗 GitHub Repository:  
 [https://github.com/asirmanjaya/Proyek-STeZe](https://github.com/asirmanjaya/Proyek-STeZe)
 
-📂 Struktur Folder:
+📁 Struktur Database:
+
+- **Struktur SQL**: `database/structure.sql`
+- **Seeder**: `database/seeders/`
+
+---
+
+## 🚀 Panduan Instalasi & Deployment
+
+### 📌 Persyaratan
+
+- PHP 8.1+
+- Composer
+- MySQL
+- Node.js + NPM (untuk asset opsional)
+- Laravel 10.x
+
+### ⚙️ Langkah Instalasi
 
 ```bash
-app/
-├── Filament/                # Panel admin & resepsionis (Filament)
-├── Http/
-│   ├── Controllers/
-│   │   ├── Frontend/       # Kontrol untuk pelanggan
-│   │   └── Admin/          # Kostumisasi panel
-├── Models/                 # Model data
-resources/
-└── views/
-    ├── frontend/           # Tampilan Blade pelanggan
-routes/
-├── web.php                 # Routing pelanggan & publik
-├── filament.php            # Routing panel admin/resepsionis
+git clone https://github.com/asirmanjaya/Proyek-STeZe.git
+cd Proyek-STeZe
+
+composer install
+cp .env.example .env
+
+# Konfigurasi file .env (DB, Email, dst.)
+php artisan key:generate
+php artisan migrate --seed
+
+php artisan storage:link
+php artisan optimize:clear
+
+## 🔗 URL Sistem Live
+
+### Frontend (Pelanggan)
+🔗 [https://steze.biz.id](https://steze.biz.id)
+
+### Backend (Admin & Resepsionis)
+- 🔗 [https://steze.biz.id/admin](https://steze.biz.id/admin)
+- 🔗 [https://steze.biz.id/resepsionis](https://steze.biz.id/resepsionis)
+
+---
+
+## 🔐 Kredensial Login Demo
+
+**Admin**  
+- 📧 Email: `admin@gmail.com`  
+- 🔑 Password: `12345`
+
+---
+
+## 👥 Tim Pengembang
+
+| Peran          | Nama                        |
+|----------------|-----------------------------|
+| Frontend Dev   | Kanaya – Blade pelanggan    |
+| Backend Dev    | Asirman Jaya – Filament     |
+
+---
+
+## ✅ Fitur Utama
+
+- 📅 **Booking online dengan kode unik**
+- 📧 **Notifikasi email otomatis**
+- 🛠 **Panel admin & resepsionis via Filament**
+- 📊 **Statistik & laporan reservasi**
+- 🔐 **Hak akses berbasis role (RBAC)**
+- 📂 **CRUD data kamar, pelanggan, dan transaksi**
+
+---
+
+## 📖 Lisensi
+
+Proyek ini berada di bawah lisensi **MIT**.  
+Silakan gunakan, distribusikan, dan modifikasi sesuai kebutuhan Anda.
+
+---
+
+## 🚀 Kontribusi
+
+Kontribusi sangat terbuka! Jangan ragu untuk membuat pull request atau membuka issue jika menemukan bug atau punya ide pengembangan baru.
+
+---
+
+## 📬 Kontak
+
+Untuk pertanyaan lebih lanjut, silakan hubungi tim pengembang melalui profil GitHub atau email masing-masing.
+
+
+
+
