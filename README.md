@@ -26,8 +26,8 @@ Sistem manajemen reservasi untuk kost dan guest house berbasis Laravel, terdiri 
 - PHP 8.1+
 - Composer
 - MySQL
-- Node.js + NPM (untuk asset opsional)
 - Laravel 10.x
+- Filament V+3
 
 ### ⚙️ Langkah Instalasi
 
